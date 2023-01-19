@@ -1,0 +1,6 @@
+curl -XPOST https://mocktarget.apigee.net/echo \
+-d '{"test-key": "test-val"}' \
+| jq .
+
+curl -XGET https://mocktarget.apigee.net/echo \
+| jq .
